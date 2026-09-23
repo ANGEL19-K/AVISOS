@@ -747,32 +747,49 @@
         });
     </script>
 <script>
-    document.addEventListener('contextmenu', function(e) {
+    document.addEventListener("contextmenu", function(e) {
         e.preventDefault();
     });
-    document.addEventListener('keydown', function(e) {
-        // Bloquear F12
-        if (e.key === 'F12' || e.keyCode === 123) {
+
+    document.addEventListener("keydown", function(e) {
+
+        if (e.key === "F12" || e.keyCode === 123) {
             e.preventDefault();
             return false;
         }
-        if (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'i' || e.keyCode === 73)) {
+
+        if (
+            e.ctrlKey &&
+            e.shiftKey &&
+            (e.key === "I" || e.key === "i" || e.keyCode === 73)
+        ) {
             e.preventDefault();
             return false;
         }
-        if (e.ctrlKey && e.shiftKey && (e.key === 'J' || e.key === 'j' || e.keyCode === 74)) {
+
+        if (
+            e.ctrlKey &&
+            e.shiftKey &&
+            (e.key === "J" || e.key === "j" || e.keyCode === 74)
+        ) {
             e.preventDefault();
             return false;
         }
-        if (e.ctrlKey && (e.key === 'U' || e.key === 'u' || e.keyCode === 85)) {
+
+        if (
+            e.ctrlKey &&
+            (e.key === "U" || e.key === "u" || e.keyCode === 85)
+        ) {
             e.preventDefault();
             return false;
         }
     });
-    document.addEventListener('selectstart', function(e) {
+
+    document.addEventListener("selectstart", function(e) {
         e.preventDefault();
     });
-    document.addEventListener('dragstart', function(e) {
+
+    document.addEventListener("dragstart", function(e) {
         e.preventDefault();
     });
 </script>
